@@ -1,0 +1,178 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.grid-container-example {
+    margin: 2rem auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid básico */
+.grid-basic {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas de igual tamaño */
+    gap: 1rem;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+.item {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* grid-template-columns */
+.grid-template-columns {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 100px; /* Diferentes tamaños de columna */
+    gap: 1rem;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+/* grid-template-rows */
+.grid-template-rows {
+    display: grid;
+    grid-template-rows: 100px 200px; /* Define filas de diferentes tamaños */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 1rem;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+/* grid-gap */
+.grid-gap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 2rem; /* Espaciado entre filas y columnas */
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+/* grid-template-areas */
+.grid-template-areas {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header header"
+        "sidebar main anuncio"
+        "footer footer anuncio";
+    gap: 1rem;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+.header {
+    grid-area: header;
+    background-color: #444;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #666;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    background-color: #888;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.anuncio {
+    grid-area: anuncio;
+    background-color: #888;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #444;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* grid-column-start / grid-column-end */
+.grid-column-control {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    gap: 1rem;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+.item-wide {
+    grid-column-start: 2;
+    grid-column-end: 4; /* Este elemento empieza en la columna 2 y termina en la 4 */
+}
+
+
+/* grid-row-start / grid-row-end */
+.grid-row-control {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    grid-auto-rows: 50px; /* Cada row ocupa 50px */
+    gap: 1rem;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+.item-tall {
+    grid-row-start: 1;
+    grid-row-end: 3; /* Este elemento ocupa dos filas */
+}
+
+.item-row-far {
+    grid-row-start: 10;
+    grid-column-start: 2;
+}
+
+/* grid-auto-rows */
+.grid-auto-rows {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas iguales */
+    grid-auto-rows: 150px; /* Altura automática de 150px por fila */
+    gap: 1rem;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+/* Estilos del pie de página */
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}

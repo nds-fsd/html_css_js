@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de CSS Grid</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Demostración de CSS Grid</h1>
+        <p>A continuación, se muestran diferentes ejemplos de cómo funciona CSS Grid.</p>
+    </header>
+
+    <!-- Grid básico -->
+    <section class="grid-container-example">
+        <h2>1. Grid básico</h2>
+        <p><strong>Propiedad:</strong> <code>display: grid</code> — Convierte un contenedor en un grid, con columnas y filas automáticas.</p>
+        <div class="grid-basic">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <!-- grid-template-columns -->
+    <section class="grid-container-example">
+        <h2>2. Definir columnas</h2>
+        <p><strong>Propiedad:</strong> <code>grid-template-columns</code> — Define el número de columnas y su tamaño.</p>
+        <div class="grid-template-columns">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </div>
+    </section>
+
+    <!-- grid-template-rows -->
+    <section class="grid-container-example">
+        <h2>3. Definir filas</h2>
+        <p><strong>Propiedad:</strong> <code>grid-template-rows</code> — Define el número de filas y su tamaño.</p>
+        <div class="grid-template-rows">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </div>
+    </section>
+
+    <!-- grid-gap -->
+    <section class="grid-container-example">
+        <h2>4. Espaciado entre elementos</h2>
+        <p><strong>Propiedad:</strong> <code>grid-gap</code> — Controla el espacio entre las filas y columnas del grid.</p>
+        <div class="grid-gap">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </div>
+    </section>
+
+    <!-- grid-template-areas -->
+    <section class="grid-container-example">
+        <h2>5. Áreas de Grid</h2>
+        <p><strong>Propiedad:</strong> <code>grid-template-areas</code> — Define áreas nombradas dentro de un grid para organizar el contenido de manera más clara.</p>
+        <div class="grid-template-areas">
+            <div class="header">Header</div>
+            <div class="sidebar">Sidebar</div>
+            <div class="main">Main</div>
+            <div class="anuncio">Anuncio</div>
+            <div class="footer">Footer</div>
+        </div>
+    </section>
+
+    <!-- grid-column-start / grid-column-end -->
+    <section class="grid-container-example">
+        <h2>6. Control de columnas</h2>
+        <p><strong>Propiedades:</strong> <code>grid-column-start</code>, <code>grid-column-end</code> — Controla en qué columna empieza y termina un elemento usando posiciones de línea del grid.</p>
+        <div class="grid-column-control">
+            <div class="item item-wide">Item 2 (Empieza en columna 2 y termina en columna 4)</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </div>
+    </section>
+
+    <!-- grid-row-start / grid-row-end -->
+    <section class="grid-container-example">
+        <h2>7. Control de filas</h2>
+        <p><strong>Propiedades:</strong> <code>grid-row-start</code>, <code>grid-row-end</code> — Controla en qué fila empieza y termina un elemento.</p>
+        <div class="grid-row-control">
+            <div class="item">Item 1</div>
+            <div class="item item-tall">Item 2 (span 2 rows)</div>
+            <div class="item item-row-far">Item 3</div>
+        </div>
+    </section>
+
+    <!-- grid-auto-rows -->
+    <section class="grid-container-example">
+        <h2>8. Altura de filas automáticas</h2>
+        <p><strong>Propiedad:</strong> <code>grid-auto-rows</code> — Establece la altura automática de las filas.</p>
+        <div class="grid-auto-rows">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Ejemplo CSS Grid</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example with Functions</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM Manipulation with JavaScript Functions</h1>
+
+    <h2 id="title">Hello World!</h2>
+
+    <p class="description">This is a paragraph for demonstration.</p>
+    <p class="description">This is a paragraph for demonstration.</p>
+    <p class="description">This is a paragraph for demonstration.</p>
+    <p class="description">This is a paragraph for demonstration.</p>
+    <p class="description">This is a paragraph for demonstration.</p>
+
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button onclick="printLog()">Print log</button>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="toggleHighlightClass()">Toggle Highlight Class</button>
+    <button onclick="removeLastItem()">Remove Last Item</button>
+    <button onclick="createNewItem()">Create New Item</button>
+    <button onclick="manipulateAttributes()">Manipulate Attribute</button>
+    <button onclick="changeStyle()">Change Style</button>
+    <button onclick="handleEvent()">Handle Event</button>
+    <button onclick="formInteraction()">Form Interaction</button>
+
+    <form id="userForm" onsubmit="formInteraction(); return false;">
+        <label for="nameInput">Enter your name:</label>
+        <input type="text" id="nameInput" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="eventDemo">
+        <button id="clickMeBtn" onclick="showAlert()">Click Me!</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

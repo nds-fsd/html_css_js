@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Demostración de Flexbox</h1>
+        <p>A continuación, se muestran diferentes ejemplos de cómo funciona Flexbox.</p>
+    </header>
+
+    <!-- Contenedor con display:flex -->
+    <section class="flex-container-example">
+        <h2>1. Contenedor Flex básico</h2>
+        <p><strong>Propiedad:</strong> <code>display: flex</code> — Convierte un contenedor en un contenedor flexible, y sus elementos hijos se distribuyen en una sola línea (a menos que se permita el envolvimiento).</p>
+        <div class="flex-basic">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <!-- justify-content -->
+    <section class="flex-container-example">
+        <h2>2. Justificar contenido</h2>
+        <p><strong>Propiedad:</strong> <code>justify-content</code> — Controla cómo se distribuyen los elementos a lo largo del eje principal (horizontal por defecto).</p>
+        <div class="flex-justify-content">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <!-- align-items -->
+    <section class="flex-container-example">
+        <h2>3. Alinear elementos</h2>
+        <p><strong>Propiedad:</strong> <code>align-items</code> — Controla cómo se alinean los elementos a lo largo del eje transversal (vertical por defecto).</p>
+        <div class="flex-align-items">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <!-- flex-wrap -->
+    <section class="flex-container-example">
+        <h2>4. Envolver elementos</h2>
+        <p><strong>Propiedad:</strong> <code>flex-wrap</code> — Permite que los elementos se envuelvan en varias líneas si no caben en una sola línea.</p>
+        <div class="flex-wrap">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+    <!-- flex-direction -->
+    <section class="flex-container-example">
+        <h2>5. Cambiar dirección</h2>
+        <p><strong>Propiedad:</strong> <code>flex-direction</code> — Define la dirección del eje principal (horizontal por defecto, pero se puede cambiar a vertical).</p>
+        <div class="flex-direction">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+        </div>
+    </section>
+
+    <!-- flex-grow -->
+    <section class="flex-container-example">
+        <h2>6. Flex-grow (crecimiento)</h2>
+        <p><strong>Propiedad:</strong> <code>flex-grow</code> — Define cómo un elemento puede crecer proporcionalmente dentro de un contenedor flex.</p>
+        <div class="flex-grow">
+            <div class="item grow-1">Item 1</div>
+            <div class="item grow-2">Item 2</div>
+            <div class="item grow-3">Item 3</div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Ejemplo Flexbox</p>
+    </footer>
+</body>
+</html>

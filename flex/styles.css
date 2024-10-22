@@ -1,0 +1,107 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.flex-container-example {
+    margin: 2rem auto;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor básico flex */
+.flex-basic {
+    display: flex;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.item {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1;
+}
+
+/* Justify-content */
+.flex-justify-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+/* Align-items */
+.flex-align-items {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: #e0e0e0;
+    padding: 1rem;
+}
+
+/* Flex-wrap */
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* Flex-direction */
+.flex-direction {
+    display: flex;
+    flex-direction: column;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* Flex-grow */
+.flex-grow {
+    display: flex;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+.grow-2 {
+    flex-grow: 2;
+    background-color: #333;
+}
+
+.grow-3 {
+    flex-grow: 3;
+}
+
+/* Estilos del pie de página */
+.main-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    margin-top: 2rem;
+}
