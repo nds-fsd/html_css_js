@@ -1,0 +1,28 @@
+.product {
+    border: solid;
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.product-name {
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: antiquewhite;
+}
